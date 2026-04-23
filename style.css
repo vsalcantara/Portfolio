@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 54px;
+    width: 100vw;
+    color:rgb(255, 255, 255);
+    background-image: url(Image_fx.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("Image_fx\ \(6\).png");
+  filter: grayscale(100%);
+  z-index: -1;
+}
+nav {
+    top:0;
+    padding: 0 100px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.container {
+    backdrop-filter:blur(15px);
+    margin: 24px;
+    padding: 16px;
+    border-radius: 1rem;
+    border:0.1rem rgb(255, 255, 255) solid;
+    background-color: hsla(0, 0%, 0%, 0.500);
+}
+.subtitulo {
+    background-color: rgb(102, 0, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 0.8rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    width: 10rem;
+}
+
+.inf {
+    display: flex;
+    justify-content: space-around;
+    font-size: x-large;
+}
+
+.container_transparent{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content:space-around;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0);
+    align-items: center;
+}
+.skills {
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.500);
+    width: 16rem;
+    height: 8rem;
+    border: 0.1rem rgb(255, 255, 255) solid;
+    border-radius: 0.8rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+}
+
+span {
+    font-size: 4rem;
+    line-height: 0.9;
+}
+
+.perfil1 {
+    width: 440px;
+    height: 440px;
+    border-radius: 50%;
+}
+
+.perfil2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.contatos {
+    width: 19rem;
+    margin: 24px;
+}
+a img:hover {
+    border-color: rgb(102, 0, 255); 
+    transition: 0.2s;
+}
+
+a {
+    color: rgb(102, 0, 255);
+    margin-left: 2rem;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(0, 255, 217);
+    transition: 0.2s;
+}
+
+.container_project {
+    margin: 24px 24px;
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.project {
+    display: flex;
+    padding: 10px;
+    backdrop-filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.500);
+    height: 10rem;
+    border: 0.1rem rgb(255, 255, 255) solid;
+    border-radius: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+.project:hover {
+    border-color:rgb(102, 0, 255);
+    transition: 0.3s;
+}
+
+.persoal {
+    width: 24rem;
+    height: 2rem;
+}
+
+.mensagens {
+    width: 24rem;
+    height: 8rem;
+}
+
+button {
+    width: 8rem;
+}
+
+a img {
+    border-radius: 50%;
+    border: 0.1rem rgb(255, 255, 255) solid;
+    transition: 0.2s;
+}
+
+.logologo {
+    width: 100px;
+     filter: brightness(0) saturate(100%) invert(17%) sepia(94%) saturate(7492%) hue-rotate(266deg) brightness(94%) contrast(101%);
+}
+
+.inicio{
+    margin-top: 128px;
+}
+
+.img_project {
+    width: 100px;
+    filter: invert(1);
+}
+span .nome {
+    color: rgb(102, 0, 255);
+}
+
+.skills:hover {
+    width: 24rem;
+    height: 16rem;
+    transition: 0.5s;
+    border-color: rgb(102, 0, 255);
+}
+.inf_skills {
+    font-size: 0px;
+    width: 100%;
+    opacity: 0;
+    transition: 0.3s;
+}
+.skills:hover .inf_skills {
+    font-size: large;
+    opacity: 1;
+    transition: 0.3s;
+}
+.skills:hover .fa-brands {
+    color: rgb(102, 0, 255);
+    transition: 0.3s;
+}
+
+.fa-brands {
+    font-size: 100px;
+    transition: 0.3s;
+}
+
+.formulario {
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 24px;
+    align-items: center;
+    border: 0.1rem rgb(255, 255, 255) solid;
+    border-radius: 0.8rem;
+    transition: 0.3s;
+}
+.formulario:hover {
+    border-color: rgb(102, 0, 255);
+    transition: 0.3s;
+}
+
+.formulario input {
+    margin: 8px;
+    padding: 4px;
+    border-radius: 0.5rem;
+    border: 0.1rem rgb(255, 255, 255) solid;
+    color: rgb(0, 0, 0);
+}
+
+.mensagens {
+    margin: 8px;
+    padding: 4px;
+    border-radius: 0.5rem;
+    border: 0.1rem rgb(255, 255, 255) solid;
+}
+
+button {
+    margin: 8px;
+    padding: 4px;
+    border-radius: 0.5rem;
+    border: 0.1rem;
+    background-color: rgb(102, 0, 255);
+    color: rgb(255, 255, 255);
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: rgb(0, 255, 217);
+    transition: 0.2s;
+    color: rgb(0, 0, 0);
+}
+
+button:active {
+    background-color: rgb(255, 255, 255);
+    transition: 0.2s;
+    color: rgb(0, 0, 0);
+}
+
+.contact {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    transition: 0.3s;
+}
+.contact:hover {
+    color: rgb(102, 0, 255);
+    transition: 0.3s;
+}
